@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce store using tailwind css</title>
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="././assets/plugins/slick-slider/slick-theme.css">
+    <link rel="stylesheet" href="./assets/plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="hidden lg:block shadow-sm">
+            <!-- Header Top start -->
+            <div >
+                <div class="container">
+                    <div class="h-16 lg:grid items-center lg:grid-cols-12 lg:gap-4">
+                        <div class="lg:col-span-3 flex items-center gap-4 ">
+                            <div class="grid grid-cols-5 gap-6 items-center">
+                                <a href="index.html"  class="col-span-2 inline-block">
+                                    <figure>
+                                        <img src="./assets/images/logo/logo.png" class="w-full" alt="header logo on desktop">
+                                    </figure>
+                                </a>
+                                <button class="col-span-3 flex items-center gap-2 "> 
+                                    <i class="fas fa-bars"></i> 
+                                    <span class="text-sm">All categorys</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6">
+                            <form action="">
+                                <div class="flex items-center">
+                                    <input type="search" class="w-full  border-2 border-primary-color focus-visible:outline-none px-3 py-2 " placeholder="Search">
+                                    <button class="px-5 py-3 bg-primary-color flex items-center gap-1 text-white text-sm">
+                                        <i class="fas fa-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="lg:col-span-3">
+                            <div class="flex gap-5 items-center justify-end">
+                                <a href="#" class="flex flex-col items-center">
+                                    <i class="fa fa-user text-xl text-black"></i>
+                                    <span class="text-sm text-gray-600">Free join</span>
+                                </a>
+                                <a href="#" class="flex flex-col items-center">
+                                    <i class="fas fa-comment-dots text-xl text-black"></i>
+                                    <span class="text-sm text-gray-600">Message</span>
+                                </a>
+                                <a href="#" class="flex flex-col items-center relative">
+                                    <span class="w-4 h-4 absolute  -top-1 -right-2 rounded-full bg-primary-color flex items-center justify-center text-xs text-white font-medium">8</span>
+                                    <i class="fas fa-shopping-cart text-xl text-black"></i>
+                                    <span class="text-sm text-gray-600">Cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top end -->
+        </div>
+    </header>
+    <main>
+        <!-- Banner section -->
+        <section class="mt-5">
+            <div class=" container bg-red-900">
+                <div id="banerSlider" >
+                    <div>
+                        <div class="h-72 flex items-center justify-center">
+                            <div>
+                                <h1 class="text-6xl text-black text-bold">Home page slider part</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-72 flex items-center justify-center">
+                            <div>
+                                <h1 class="text-6xl text-black text-bold">Home page slider one</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-72 flex items-center justify-center">
+                            <div>
+                                <h1 class="text-6xl text-black text-bold">Home page slider two</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-72 flex items-center justify-center">
+                            <div>
+                                <h1 class="text-6xl text-white text-bold">Home page slider three</h1>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- Category section -->
+        <section class="my-5 py-5 bg-gray-300">
+            <div class=" container">
+                <div id="categorySlider" class="items-center flex " >
+                    <div class="px-2 box-border">
+                        <div class="p-3 bg-white ">
+                            <p class=" mb-2">
+                                <a href="#" class="text-xl text-gray-700 font-semibold hover:text-gray-800">Shop deals in Fashion</a>
+                            </p>
+                            <div class="grid grid-cols-2 gap-3 ">
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="px-2 box-border">
+                        <div class="p-3 bg-white ">
+                            <p class=" mb-2">
+                                <a href="#" class="text-xl text-gray-700 font-semibold hover:text-gray-800">Shop deals in Fashion</a>
+                            </p>
+                            <div class="grid grid-cols-2 gap-3 ">
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="px-2 box-border ">
+                        <div class="p-3 bg-white h-full">
+                            <p class=" mb-2">
+                                <a href="#" class="text-xl text-gray-700 font-semibold hover:text-gray-800">Shop deals in check</a>
+                            </p>
+                            <div class="grid grid-cols-2 gap-3 ">
+                                <a href="#" class="col-span-2 h-full block bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" class="w-full" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="px-2 box-border">
+                        <div class="p-3 bg-white ">
+                            <p class=" mb-2">
+                                <a href="#" class="text-xl text-gray-700 font-semibold hover:text-gray-800">Shop deals in Fashion</a>
+                            </p>
+                            <div class="grid grid-cols-2 gap-3 ">
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="px-2 box-border">
+                        <div class="p-3 bg-white ">
+                            <p class=" mb-2">
+                                <a href="#" class="text-xl text-gray-700 font-semibold hover:text-gray-800">Shop deals in Fashion</a>
+                            </p>
+                            <div class="grid grid-cols-2 gap-3 ">
+                                <a href="#" class="col-span-1 bg-white group">
+                                    <div>
+                                        <img src="././assets/images/categorys/1.jpg" alt="">
+                                    </div>
+                                    <p class="text-sm group-hover:text-primary-color transition duration-200">tasdf</p>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+               
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Product Section  -->
+        <section>
+            <div>
+                <div class="container">
+                    <div class="grid grid-cols-12 gap-4">
+                        <article class="col-span-3 border border-gray-500">
+                            <div>
+                                <div>
+                                    <!-- img -->
+                                </div>
+                                <div class="p-4">
+                                    <p class="">
+                                        <a href="#" class="text-gray-900 text-sm font-bold">Python Graft Developer T-Shirt</a>
+                                    </p>
+                                    <p class="">
+                                        <a href="#" class="uppercase font-medium text-xs">T-shart</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/plugins/slick-slider/slick.min.js"></script>
+    <script src="./assets/plugins/slick-slider/slider.responsive.js"></script>
+
+
+</body>
+</html>
