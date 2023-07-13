@@ -1030,6 +1030,10 @@ body{
   padding-bottom: 3px;
 }
 
+.pl-\[250px\]{
+  padding-left: 250px;
+}
+
 .font-primary{
   font-family: Lato, sans-serif;
 }
@@ -1254,15 +1258,27 @@ body{
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -1313,6 +1329,11 @@ body{
 
   .lg\:gap-4{
     gap: 1rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

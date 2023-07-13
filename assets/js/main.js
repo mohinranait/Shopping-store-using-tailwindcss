@@ -2,7 +2,9 @@ $(document).ready(() => {
     $(".categoryFinder").click((e) => {
         $(".leftMenuWrap").toggleClass(["left-0"])
         $(".leftMenuWrap").toggleClass("-left-[250px]")
-        $(".main").toggleClass("pl-[250px]")
+        if(  window.innerWidth > 992 ){
+            $(".main").toggleClass("pl-[250px]")
+        }
     })
     $(".closeLeftMenu").click((e) => {
         $(".leftMenuWrap").addClass("-left-[250px]")
@@ -15,3 +17,4 @@ $(document).ready(() => {
         $(this).parents('a').next().slideToggle();
     })
 })
+
