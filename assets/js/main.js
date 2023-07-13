@@ -3,13 +3,13 @@ $(document).ready(() => {
         $(".leftMenuWrap").toggleClass(["left-0"])
         $(".leftMenuWrap").toggleClass("-left-[250px]")
         if(  window.innerWidth > 992 ){
-            $(".main").toggleClass("pl-[250px]")
+            $(".main").toggleClass("ml-[250px]")
         }
     })
     $(".closeLeftMenu").click((e) => {
         $(".leftMenuWrap").addClass("-left-[250px]")
         $(".leftMenuWrap").removeClass("left-0")
-        $(".main").removeClass("pl-[250px]")
+        $(".main").removeClass("ml-[250px]")
     })
 
     // Submenu open close
