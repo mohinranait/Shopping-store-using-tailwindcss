@@ -1,5 +1,4 @@
 $(document).ready(() => {
-    let categoryFinder = $(".categoryFinder");
     $(".categoryFinder").click((e) => {
         $(".leftMenuWrap").toggleClass(["left-0"])
         $(".leftMenuWrap").toggleClass("-left-[250px]")
@@ -12,7 +11,7 @@ $(document).ready(() => {
     })
 
     // Submenu open close
-    $(".subMenuFinder").click((e) => {
-        let ulitem = $(".subMenuFinder").parent('a').next().slideToggle()
+    $(".subMenuFinder").click( function() {
+        $(this).parents('a').next().slideToggle();
     })
 })
