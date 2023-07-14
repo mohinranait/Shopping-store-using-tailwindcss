@@ -100,7 +100,7 @@
 
    
 
-    <main class="main transition-all duration-500 right-0">
+    <main class="pb-12 lg:pb-2 main transition-all duration-500 right-0">
         
         <section class="bg-[#F9FAFB] pt-5">
             <div>
@@ -109,18 +109,18 @@
                         <div class="col-span-12 grid grid-cols-1 gap-8 lg:grid-cols-9 lg:col-span-9">
                             <div class="col-span-4 grid gap-3 grid-cols-6">
                                 <div class="flex col-span-1 flex-col space-y-2">
-                                    <div class="border-2 border-slate-600">
+                                    <div class="border border-slate-200">
                                         <img src="./assets/images/products/1.jpg" alt="">
                                     </div>
-                                    <div class="border-2 border-slate-600">
+                                    <div class="border border-slate-200">
                                         <img src="./assets/images/products/1.jpg" alt="">
                                     </div>
-                                    <div class="border-2 border-slate-600">
+                                    <div class="border border-slate-200">
                                         <img src="./assets/images/products/1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-span-5 ">
-                                    <div class="border border-gray-300 flex items-center justify-center">
+                                    <div class="flex items-center justify-center">
 
                                         <img src="./assets/images/products/1.jpg" alt="">
                                     </div>
@@ -172,13 +172,17 @@
                                                 </div>
                                             </div>
                                         </li>
+                                         <li class="grid items-center grid-cols-6">
+                                            <p class="text-base text-gray-700 font-semibold col-span-1">Total:</p>
+                                            <p class="text-sm  font-semibold col-span-5 text-gray-500"><span class="text-base font-semibold text-gray-600">$408.00</span> </p>
+                                        </li>
                                         <li class="grid items-center grid-cols-6">
                                             
-                                            <div class=" col-span-5 gap-4 flex justify-start ">
-                                                <span class="flex border ">
-                                                    <button class="px-2 text-lg border border-slate-300">-</button>
-                                                    <input type="text" value="1" min="1" step="1" class="py-[6px] border w-10 text-center focus-visible:outline-none">
-                                                    <button class="px-2 text-lg border border-slate-300">+</button>
+                                            <div class=" col-span-5 gap-4 flex py-2 justify-start ">
+                                                <span class="flex ">
+                                                    <button class="px-2 text-xl border border-r-0 border-slate-300 hover:bg-primary-color hover:text-white hover:border-primary-color">-</button>
+                                                    <input type="text" value="1" min="1" step="1" class="py-[6px] border border-slate-300 w-10 text-center focus-visible:outline-none">
+                                                    <button class="px-2 text-lg border border-l-0 border-slate-300 hover:bg-primary-color hover:text-white hover:border-primary-color">+</button>
                                                 </span> 
                                                 <button class="uppercase px-3 text-sm text-white font-medium bg-primary-color">Add to cart</button>
                                                 <button class="uppercase px-3 text-sm text-white font-medium bg-primary-color">Order now</button>
@@ -195,7 +199,223 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>    
+        
+        
+        <section class="pt-5 bg-[#F9FAFB]" >
+            <div>
+                <div class="container">
+                    <div class="grid grid-cols-12 gap-5">
+                        <aside class="hidden lg:block col-span-12 lg:col-span-3">
+                            
+                            <div class="bg-white shadow-sm border border-gray-100">
+                                <div class="px-4 py-2">
+                                    <h3 class="text-lg font-semibold text-gray-700">Best selling products</h3>
+                                </div>
+                                <hr>
+                                <div class="px-2">
+                                    <article class="grid grid-cols-3 items-center">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2">
+                                            <div>
+                                                <p ><a href="#" class="text-sm text-gray-900 font-semibold">Python Graft Developer T-Shirt</a></p>
+                                                <p class="text-sm text-gray-600 font-semibold">$120</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="grid grid-cols-3 items-center">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2">
+                                            <div>
+                                                <p ><a href="#" class="text-sm text-gray-900 font-semibold">Python Graft Developer T-Shirt</a></p>
+                                                <p class="text-sm text-gray-600 font-semibold">$120</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="grid grid-cols-3 items-center">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2">
+                                            <div>
+                                                <p ><a href="#" class="text-sm text-gray-900 font-semibold">Python Graft Developer T-Shirt</a></p>
+                                                <p class="text-sm text-gray-600 font-semibold">$120</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="grid grid-cols-3 items-center">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2">
+                                            <div>
+                                                <p ><a href="#" class="text-sm text-gray-900 font-semibold">Python Graft Developer T-Shirt</a></p>
+                                                <p class="text-sm text-gray-600 font-semibold">$120</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                   
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="col-span-12 lg:col-span-9">
+                            <div class="bg-white shadow-sm  ">
+                                <div class="px-5 py-3 flex gap-8">
+                                    <button class="uppercase text-sm font-medium text-gray-700">Description</button>
+                                    <button class="uppercase text-sm font-medium text-gray-700">Reviews</button>
+                                </div>
+                                <hr>
+                                <div class="px-5 py-5">
+                                    <p class="text-base mb-3 font-semibold text-gray-800">Stylish & Trendy Developer Graphic Printed Round Neck T-Shirt</p>
+                                    <ul class="space-y-2 ml-4 list-disc list-inside">
+                                        <li class="text-sm text-gray-600">100% Premium Cotton with Bio Wash - Feels soft & comfortable</li>
+                                        <li class="text-sm text-gray-600">Short Sleeves, Regular Fit</li>
+                                        <li class="text-sm text-gray-600">Short Sleeves, Regular Fit</li>
+                                        <li class="text-sm text-gray-600">Fabric 175~180 GSM</li>
+                                        <li class="text-sm text-gray-600">Reactive Dye, enzyme, and silicon washed</li>
+                                        <li class="text-sm text-gray-600">High-Quality Digital DTF Printed</li>
+                                    </ul>
+                                    <div class="overflow-hidden rounded-lg mt-4  ">
+                                        <table class="w-full border-collapse bg-white text-left text-sm text-gray-500">
+                                            <thead class="bg-gray-50">
+                                                <tr>
+                                                    <th scope="col" class="px-6 py-2 font-medium text-gray-900">Size</th>
+                                                    <th scope="col" class="px-6 py-2 font-medium text-gray-900">Chest</th>
+                                                    <th scope="col" class="px-6 py-2 font-medium text-gray-900">Length</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-100 border-t border-gray-100">
+                                                <tr class="hover:bg-gray-50">
+                                                    <td class="px-6 py-2">M</td>
+                                                    <td class="px-6 py-2">38 inch</td>
+                                                    <td class="px-6 py-2">27 inch</td>
+                                                </tr>
+                                                <tr class="hover:bg-gray-50">
+                                                    <td class="px-6 py-2">L</td>
+                                                    <td class="px-6 py-2">40 inch</td>
+                                                    <td class="px-6 py-2">27 inch</td>
+                                                </tr>
+                                                <tr class="hover:bg-gray-50">
+                                                    <td class="px-6 py-2">XL</td>
+                                                    <td class="px-6 py-2">42 inch</td>
+                                                    <td class="px-6 py-2">30 inch</td>
+                                                </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 bg-white shadow-sm">
+                                <div class="px-5 py-3">
+                                    <p class="text-lg font-semibold text-gray-700">You may also choice</p>
+                                </div> 
+                                <hr>
+                                <div class="px-5 py-4 grid grid-cols-2 gap-4">
+                                    <article class="col-span-2 md:col-span-1 relative grid grid-cols-3 items-center border border-gray-200 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2 py-5  border-l border-gray-300">
+                                            <div class="pl-5">
+                                                <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
+                                                <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
+                                            </div>
+                                        </div>
+                                       <div class="absolute bottom-5 right-5 ">
+                                            <form action="" class="">
+                                                <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
+                                                    <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>
+                                                </button>
+                                            </form>
+                                       </div>
+                                    </article>
+                                  
+                                    <article class="col-span-2 md:col-span-1 relative grid grid-cols-3 items-center border border-gray-200 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2 py-5  border-l border-gray-300">
+                                            <div class="pl-5">
+                                                <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
+                                                <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
+                                            </div>
+                                        </div>
+                                       <div class="absolute bottom-5 right-5 ">
+                                            <form action="" class="">
+                                                <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
+                                                    <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>
+                                                </button>
+                                            </form>
+                                       </div>
+                                    </article>
+                                  
+                                    <article class="col-span-2 md:col-span-1 relative grid grid-cols-3 items-center border border-gray-200 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2 py-5  border-l border-gray-300">
+                                            <div class="pl-5">
+                                                <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
+                                                <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
+                                            </div>
+                                        </div>
+                                       <div class="absolute bottom-5 right-5 ">
+                                            <form action="" class="">
+                                                <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
+                                                    <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>
+                                                </button>
+                                            </form>
+                                       </div>
+                                    </article>
+                                  
+                                    <article class="col-span-2 md:col-span-1 relative grid grid-cols-3 items-center border border-gray-200 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="">
+                                                <img src="./assets/images/products/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-span-2 py-5  border-l border-gray-300">
+                                            <div class="pl-5">
+                                                <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
+                                                <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
+                                            </div>
+                                        </div>
+                                       <div class="absolute bottom-5 right-5 ">
+                                            <form action="" class="">
+                                                <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
+                                                    <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>
+                                                </button>
+                                            </form>
+                                       </div>
+                                    </article>
+                                  
+                                  
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
