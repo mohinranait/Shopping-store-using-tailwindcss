@@ -44,5 +44,22 @@ $(document).ready(() => {
             })
         }, 400);
     })
+
+    // Product quentity increment and decrement 
+    let decrementProduct = $("#decrementProduct");
+    let incrementProduct = $("#incrementProduct");
+    let productValue = $("#productValue");
+    incrementProduct.click((e)=>{
+        productValue.val( Number(productValue.val()) + 1);
+    })
+    decrementProduct.click((e)=>{
+        let productQty = Number(productValue.val());
+        if(productQty > 1){
+            productValue.val( productQty - 1);
+        }else{
+            alert('Minimum purchase at least one quantity');
+            productValue.val(1);
+        }
+    })
 })
 
