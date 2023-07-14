@@ -49,17 +49,35 @@ $(document).ready(() => {
     let decrementProduct = $("#decrementProduct");
     let incrementProduct = $("#incrementProduct");
     let productValue = $("#productValue");
+    let productPrice = Number($(".prodPrice").text());
+    $(".totalPrice").text(productPrice) 
     incrementProduct.click((e)=>{
         productValue.val( Number(productValue.val()) + 1);
+        let total = (productPrice * Number(productValue.val()));
+        $(".totalPrice").text(total) 
     })
     decrementProduct.click((e)=>{
         let productQty = Number(productValue.val());
         if(productQty > 1){
             productValue.val( productQty - 1);
+            let total = (productPrice * (productQty - 1));
+            $(".totalPrice").text(total)
         }else{
             alert('Minimum purchase at least one quantity');
             productValue.val(1);
         }
     })
+
+    // Product size jquery code added
+    let size = $(".sizeFinder");
+    size.click((e) => {
+        let parentDiv = $(e.target).parent('.sizeWrap').parent('div').find('label');
+        let selectLabel = $(e.target).parent('.sizeWrap').find('label');
+        parentDiv.removeClass(["bg-primary-color","border-primary-color","text-white"]);
+        selectLabel.addClass(["bg-primary-color","border-primary-color","text-white"])
+
+    })
+
+
 })
 

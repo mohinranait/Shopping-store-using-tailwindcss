@@ -154,28 +154,32 @@
                                         </li>
                                         <li class="grid items-center grid-cols-6">
                                             <p class="text-base text-gray-700 font-semibold col-span-1">Price:</p>
-                                            <p class="text-sm  font-semibold col-span-5 text-gray-500"><span class="text-lg font-semibold text-primary-color">$408.00</span> /Pcs</p>
+                                            <p class="text-sm  font-semibold col-span-5 text-gray-500">
+                                                <span class="text-lg font-semibold text-primary-color ">
+                                                    $<span class="prodPrice">408.00</span>
+                                                 </span> /Pcs
+                                                </p>
                                         </li>
                                         <li class="grid items-center grid-cols-6">
                                             <p class="text-base text-gray-700 font-semibold col-span-1">Size:</p>
                                             <div class="text-sm  font-medium col-span-5  flex gap-2">
-                                                <div>
-                                                    <input type="radio" class="absolute -left-full" name="size" id="radio_m">
+                                                <div class="sizeWrap ">
+                                                    <input type="radio" class="absolute sizeFinder -left-full" value="m" name="size" checked id="radio_m">
                                                     <label class="px-[10px] py-[6px] border rounded-sm cursor-pointer bg-primary-color border-primary-color text-white font-semibold text-sm" for="radio_m">M</label>
                                                 </div>
-                                                <div>
-                                                    <input type="radio" class="absolute -left-full" name="size" id="radio_s">
+                                                <div class="sizeWrap ">
+                                                    <input type="radio" class="absolute sizeFinder -left-full" value="s"  name="size" id="radio_s">
                                                     <label class="px-[10px] py-[6px] border border-gray-300 rounded-sm cursor-pointer font-semibold text-sm text-gray-600" for="radio_s">S</label>
                                                 </div>
-                                                <div>
-                                                    <input type="radio" class="absolute -left-full" name="size" id="radio_l">
+                                                <div class="sizeWrap ">
+                                                    <input type="radio" class="absolute sizeFinder -left-full" value="l" name="size" id="radio_l">
                                                     <label class="px-[10px] py-[6px] border border-gray-300 rounded-sm cursor-pointer font-semibold text-sm text-gray-600" for="radio_l">L</label>
                                                 </div>
                                             </div>
                                         </li>
                                          <li class="grid items-center grid-cols-6">
                                             <p class="text-base text-gray-700 font-semibold col-span-1">Total:</p>
-                                            <p class="text-sm  font-semibold col-span-5 text-gray-500"><span class="text-base font-semibold text-gray-600">$408.00</span> </p>
+                                            <p class="text-sm  font-semibold col-span-5 text-gray-500"><span class="text-base font-semibold text-gray-600">$ <span class="totalPrice"></span> </span> </p>
                                         </li>
                                         <li class="grid items-center grid-cols-6">
                                             
