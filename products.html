@@ -101,33 +101,33 @@
 
     <main class="pb-12 lg:pb-2 main transition-all duration-500 right-0">
         
-        <section class="bg-[#F9FAFB] pt-5">
+        <section class="bg-[#F9FAFB] lg:pt-5">
             <div>
                 <div class="container bg-white shadow-sm rounded-md">
                     <div class="productGallary grid grid-cols-12 gap-3 px-3 py-5">
-                        <div class="mb-5 lg:mb-0 col-span-12 grid grid-cols-1 gap-8 lg:grid-cols-9 lg:col-span-9">
+                        <div class="mb-5 lg:mb-0 col-span-12 lg:col-span-9 grid grid-cols-1 gap-8 lg:grid-cols-9">
                            
-                            <div class="col-span-4">
-                                <div class=" grid gap-3 grid-cols-6 sticky top-0">
-                                    <div class="flex  flex-col space-y-2">
-                                        <div class="border cursor-pointer border-slate-200">
+                            <div class="col-span-1 lg:col-span-4">
+                                <div class=" grid gap-3 grid-cols-6  sticky top-0">
+                                    <div class="flex justify-center col-span-6 md:col-span-1 md:flex-col gap-2 md:gap-0 md:space-y-2 order-2 md:order1">
+                                        <div class="border cursor-pointer border-slate-200 w-16 h-16 md:w-auto md:h-auto">
                                             <img class="productGallaryImg" src="./assets/images/products/1.jpg" alt="">
                                         </div>
-                                        <div class="border cursor-pointer border-slate-200">
+                                        <div class="border cursor-pointer border-slate-200 w-16 h-16 md:w-auto md:h-auto">
                                             <img class="productGallaryImg" src="./assets/images/products/2.jpg" alt="">
                                         </div>
-                                        <div class="border cursor-pointer border-slate-200">
+                                        <div class="border cursor-pointer border-slate-200 w-16 h-16 md:w-auto md:h-auto">
                                             <img class="productGallaryImg" src="./assets/images/products/3.jpg" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-span-5 ">
+                                    <div class="col-span-6 md:col-span-5 order-1 md:order-2">
                                         <div class="flex items-center justify-center">
                                             <img id="productDisplayImg" src="./assets/images/products/1.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-5">
+                            <div class="col-span-1 lg:col-span-5">
                                 <div>
                                     <ul class="flex mb-3 items-center gap-4">
                                         <li class="after:content-['/'] relative after:absolute after:-right-3 after:top-0 after:text-[#777]  "><a href="#" class="text-[#777777] text-sm font-medium">Home</a></li>
@@ -183,14 +183,14 @@
                                         </li>
                                         <li class="grid items-center grid-cols-6">
                                             
-                                            <div class=" col-span-5 gap-4 flex py-2 justify-start ">
+                                            <div class=" col-span-6 gap-4 flex flex-wrap py-2 justify-start ">
                                                 <span class="flex ">
                                                     <button id="decrementProduct" type="button" class="px-2 text-xl border border-r-0 border-slate-300 hover:bg-primary-color hover:text-white hover:border-primary-color transition-all duration-300">-</button>
                                                     <input id="productValue" type="text" value="1" min="1" step="1"  class="py-[6px] border border-slate-300 w-10 text-center focus-visible:outline-none">
                                                     <button id="incrementProduct" type="button" class="px-2 text-lg border border-l-0 border-slate-300 hover:bg-primary-color hover:text-white hover:border-primary-color transition-all duration-300">+</button>
                                                 </span> 
-                                                <button class="uppercase px-3 text-sm text-white font-medium bg-primary-color">Add to cart</button>
-                                                <button class="uppercase px-3 text-sm text-white font-medium bg-primary-color">Order now</button>
+                                                <button class="uppercase py-2 px-3 text-sm text-white font-medium bg-primary-color">Add to cart</button>
+                                                <button class="uppercase py-2 px-3 text-sm text-white font-medium bg-primary-color">Order now</button>
                                             </div>
                                         </li>
                                     </ul>
@@ -372,12 +372,12 @@
                                             </a> 
                                         </div>
                                         <div class="col-span-2 py-5  border-l border-gray-200">
-                                            <div class="pl-5">
+                                            <div class="pl-3">
                                                 <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
                                                 <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
                                             </div>
                                         </div>
-                                       <div class="absolute bottom-5 right-5 ">
+                                       <div class="absolute bottom-3 right-3 ">
                                             <form action="" class="">
                                                 <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
                                                     <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>
@@ -393,12 +393,12 @@
                                             </a> 
                                         </div>
                                         <div class="col-span-2 py-5  border-l border-gray-200">
-                                            <div class="pl-5">
+                                            <div class="pl-3">
                                                 <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
                                                 <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
                                             </div>
                                         </div>
-                                       <div class="absolute bottom-5 right-5 ">
+                                       <div class="absolute bottom-3 right-3 ">
                                             <form action="" class="">
                                                 <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
                                                     <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>
@@ -414,12 +414,12 @@
                                             </a> 
                                         </div>
                                         <div class="col-span-2 py-5  border-l border-gray-200">
-                                            <div class="pl-5">
+                                            <div class="pl-3">
                                                 <p class=""><a href="#" class="text-base font-semibold text-gray-700">Azure Developer T-Shirt</a></p>
                                                 <p><span class="text-base font-semibold">$120</span> <del class="text-sm font-medium">$150</del> </p>
                                             </div>
                                         </div>
-                                       <div class="absolute bottom-5 right-5 ">
+                                       <div class="absolute bottom-3 right-3 ">
                                             <form action="" class="">
                                                 <button class="w-9 h-9 rounded-full border-2  border-gray-500 flex items-center justify-center">
                                                     <i class="fas fa-shopping-cart text-xs text-gray-600" ></i>

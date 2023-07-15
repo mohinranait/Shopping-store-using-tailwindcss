@@ -75,7 +75,6 @@ $(document).ready(() => {
         let selectLabel = $(e.target).parent('.sizeWrap').find('label');
         parentDiv.removeClass(["bg-primary-color","border-primary-color","text-white"]);
         selectLabel.addClass(["bg-primary-color","border-primary-color","text-white"])
-
     })
 
 
