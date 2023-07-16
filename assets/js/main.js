@@ -1,7 +1,7 @@
 $(document).ready(() => {
     $(".categoryFinder").click((e) => {
         $(".leftMenuWrap").toggleClass(["left-0"])
-        $(".leftMenuWrap").toggleClass("-left-[250px]")
+        $(".leftMenuWrap").toggleClass("-left-[300px]")
         if(  window.innerWidth > 992 ){
             $(".main").toggleClass("boxLayout")
             // Product details page jquery code start
@@ -13,7 +13,7 @@ $(document).ready(() => {
         }
     })
     $(".closeLeftMenu").click((e) => {
-        $(".leftMenuWrap").addClass("-left-[250px]")
+        $(".leftMenuWrap").addClass("-left-[300px]")
         $(".leftMenuWrap").removeClass("left-0")
         $(".main").removeClass("boxLayout")
         if( window.innerWidth > 992 ){
@@ -75,6 +75,23 @@ $(document).ready(() => {
         let selectLabel = $(e.target).parent('.sizeWrap').find('label');
         parentDiv.removeClass(["bg-primary-color","border-primary-color","text-white"]);
         selectLabel.addClass(["bg-primary-color","border-primary-color","text-white"])
+    })
+
+
+    // Product cart increment and decrement jquery 
+    $(".incrementCart").on('click',(e)=>{
+        let cartValue = $(e.target).parents('span').find('.qtyValue');
+        cartValue.val(Number(cartValue.val()) + 1);        
+    })
+    // Product cart increment and decrement jquery 
+    $(".decrementCart").on('click',(e)=>{
+        let cartValue = $(e.target).parents('span').find('.qtyValue');
+        if(Number(cartValue.val()) > 1 ){
+            cartValue.val(Number(cartValue.val()) - 1);        
+        }else{
+            alert('Minimum purchase at least one quantity');
+            productValue.val(1);
+        }
     })
 
 
