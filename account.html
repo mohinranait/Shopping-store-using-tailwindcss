@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="grid grid-cols-12 gap-2 lg:gap-5 px-2">
+            <div class="col-span-12 lg:col-span-3  py-5 px-5 bg-white lg:h-screen  shadow-md">
+                <div>
+                    <div class="flex items-center justify-center mb-10">
+                        <div>
+                            <div class="w-28 h-28 mb-3 rounded-full mx-auto shadow-md overflow-hidden">
+                                <img src="./assets/images/auth/avater1.jpg" class="w-full" alt="">
+                            </div>
+                            <div>
+                                <h3 class="text-center text-xl font-semibold">Mohin Rana</h3>
+                                <p class="text-center text-sm ">mohinrana@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul >
+                        <li class="">
+                            <a href="dashboard.html" class="py-[10px] text-slate-700 flex items-center gap-3 text-sm font-semibold hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white w-full  rounded-md px-3">
+                                <svg class="w-6 h-6 fill-current inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="orders.html" class="py-[10px] text-slate-700 flex items-center gap-3 text-sm font-semibold hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white w-full  rounded-md px-3">
+                                <svg class="w-6 h-6 fill-current inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
+                                  </svg>
+                                Orders
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="account.html" class="py-[10px] text-slate-700 flex items-center gap-3 text-sm font-semibold hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white w-full  rounded-md px-3">
+                               <i class="fa fa-user text-xl"></i>
+                                Account
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="py-[10px] text-slate-700 flex items-center gap-3 text-sm font-semibold hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white w-full  rounded-md px-3">
+                                <i class="fas fa-sign-out-alt text-xl"></i>
+                                Logout
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-9  py-5">
+                <div>
+                    <div class="px4 py-3 mb-5 rounded-md bg-mute-color">
+                        <p class="text-sm text-slate-700 px-5">Click here to update all your account information. <a href="account.html" class="text-primary-color">Account</a> </p>
+                    </div>
+                  
+                    <div class="px-5 py-5 bg-white rounded-md">
+                        <form action="">
+                            <div class="mb-6 grid grid-cols-1 gap-3 lg:gap-5 lg:grid-cols-2">
+                                <div class="col-span-1">
+                                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                                    <div class="mt-2">
+                                      <input type="text"  id="first-name" class="w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none px-4 placeholder:text-gray-400 focus:ring-2 focus:ring-primary-color " >
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                                    <div class="mt-2">
+                                      <input type="text"  id="last-name" class="w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none px-4 placeholder:text-gray-400 focus:ring-2 focus:ring-primary-color " >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-6 grid grid-cols-1 gap-3 lg:gap-5 lg:grid-cols-2">
+                                <div class="col-span-1">
+                                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                                    <div class="mt-2">
+                                      <input type="text"  id="email" class="w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none px-4 placeholder:text-gray-400 focus:ring-2 focus:ring-primary-color " >
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <label for="phone" class="block text-sm font-medium leading-6 text-gray-900">Phone</label>
+                                    <div class="mt-2">
+                                      <input type="text"  id="phone" class="w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none px-4 placeholder:text-gray-400 focus:ring-2 focus:ring-primary-color " >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-6 grid grid-cols-1 gap-3 lg:gap-5 lg:grid-cols-2">
+                                <div class="col-span-full">
+                                    <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover photo</label>
+                                    <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+                                      <div class="text-center">
+                                        <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                                          <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            <span>Upload a file</span>
+                                            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                                          </label>
+                                          <p class="pl-1">or drag and drop</p>
+                                        </div>
+                                        <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Update Account</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
