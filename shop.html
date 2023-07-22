@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.png">
+    <title>E-commerce store using tailwind css</title>
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body class="relative">
+
+    <header class="">
+        <div class="hidden lg:block bg-white shadow-sm">
+            <!-- Header Top start -->
+            <div >
+                <div class="container">
+                    <div class="h-16 lg:grid items-center lg:grid-cols-12 lg:gap-4">
+                        <div class="lg:col-span-3 flex items-center gap-4 ">
+                            <div class="grid grid-cols-5 gap-6 items-center">
+                                <a href="index.html"  class="col-span-2 inline-block">
+                                    <figure>
+                                        <img src="./assets/images/logo/logo.png" class="w-full" alt="header logo on desktop">
+                                    </figure>
+                                </a>
+                                <button title="All Categories" class="col-span-3 flex  gap-1 w-10 h-10 items-center justify-center shadow rounded-sm  categoryFinder"> 
+                                    <i class="fas fa-th-list text-gray-500"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6">
+                            <form action="">
+                                <div class="flex items-center">
+                                    <input type="search" class="w-full  border-2 border-primary-color focus-visible:outline-none px-3 py-2 " placeholder="Search">
+                                    <button class="px-5 py-3 bg-primary-color flex items-center gap-1 text-white text-sm">
+                                        <i class="fas fa-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="lg:col-span-3">
+                            <div class="flex gap-5 items-center justify-end">
+                                <a href="login.html" class="flex flex-col items-center">
+                                    <i class="fa fa-user text-xl text-gray-700"></i>
+                                    <span class="text-sm text-gray-600">Account</span>
+                                </a>
+                                <a href="live-chat.html" class="flex flex-col items-center">
+                                    <svg class="w-6 h-6 fill-current inline-block text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
+                                        <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
+                                      </svg>
+                                    <span class="text-sm text-gray-600">Message</span>
+                                </a>
+                                <a href="cart.html" class="flex group flex-col items-center relative">
+                                    <span class="w-4 h-4 absolute  -top-1 -right-2 rounded-full bg-primary-color flex items-center justify-center text-xs text-white font-medium">8</span>
+                                    <i class="fas fa-shopping-cart text-xl text-gray-700"></i>
+                                    <span class="text-sm text-gray-600">Cart</span>
+                                    <div class="w-[300px] z-[999999999] transition-all group-hover:visible group-hover:opacity-100 invisible opacity-0 shadow-md  border border-gray-50  py-3 bg-white absolute right-0 top-full">
+                                        <ul class="divide-y divide-slate-100">
+                                            <li class="px-2 py-4 items-center hover:bg-slate-50 gap-3 flex relative ">
+                                                <div class="w-16">
+                                                    <img src="./assets/images/products/1.jpg" class="" alt="">
+                                                </div>
+                                                <div class="text-sm font-medium text-slate-700">
+                                                    <p class="text-slate-600 text-base font-medium">Lorem ipsum dolor sit amet.</p>
+                                                    <p class="text-sm font-semibold text-slate-400">$120 * 5  </p>
+                                                </div>
+                                                <form action="">
+                                                  <button class="absolute bottom-5 right-3">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 w-4 h-4 text-slate-500">
+                                                          <polyline points="3 6 5 6 21 6"></polyline>
+                                                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                          <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                          <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                      </svg>
+                                                  </button>
+                                                </form>
+                                            </li>
+                                            <li class="px-2 py-4 items-center hover:bg-slate-50 gap-3 flex relative ">
+                                                <div class="w-16">
+                                                    <img src="./assets/images/products/5.jpg" class="" alt="">
+                                                </div>
+                                                <div class="text-sm font-medium text-slate-700">
+                                                    <p class="text-slate-600 text-base font-medium">Lorem ipsum dolor sit amet.</p>
+                                                    <p class="text-sm font-semibold text-slate-400">$120 * 5  </p>
+                                                </div>
+                                                <form action="">
+                                                  <button class="absolute bottom-5 right-3">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 w-4 h-4 text-slate-500">
+                                                          <polyline points="3 6 5 6 21 6"></polyline>
+                                                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                          <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                          <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                      </svg>
+                                                  </button>
+                                                </form>
+                                            </li>
+                                            <li class="px-2 py-4 items-center hover:bg-slate-50 gap-3 flex relative ">
+                                                <div class="w-16">
+                                                    <img src="./assets/images/products/10.jpg" class="" alt="">
+                                                </div>
+                                                <div class="text-sm font-medium text-slate-700">
+                                                    <p class="text-slate-600 text-base font-medium">Lorem ipsum dolor sit amet.</p>
+                                                    <p class="text-sm font-semibold text-slate-400">$120 * 5  </p>
+                                                </div>
+                                                <form action="">
+                                                  <button class="absolute bottom-5 right-3">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 w-4 h-4 text-slate-500">
+                                                          <polyline points="3 6 5 6 21 6"></polyline>
+                                                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                          <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                          <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                      </svg>
+                                                  </button>
+                                                </form>
+                                            </li>
+                                           
+                                            <li>
+                                                <div class="p-4 justify-center flex">
+                                                    <button class="text-base  undefined  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded  cursor-pointer 
+                                                        text-primary-color 
+                                                        border duration-200 ease-in-out 
+                                                        border-primary-color transition">
+                                                        Checkout $36.66
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top end -->
+        </div>
+    </header>
+
+
+   
+
+    <main class="main transition-all duration-500  right-0">
+    
+        <!-- Product Section  -->
+        <section class="py-10 bg-gray-50">
+            <div>
+                <div class="container">
+                    <div class="hidden  md:flex items-center justify-between py-4 ">
+                        <p class="text-xl text-gray-600 font-semibold ">Larvel <span class="text-sm text-slate-500">(11) shows</span></p>
+                    </div>
+                    <div class=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  xl:grid-cols-5 gap-2 lg:gap-4">
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/1.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye text-sm"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700 text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase font-medium text-xs text-slate-400 hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-lg font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/2.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  font-bold font-primary text-xs lg:text-sm">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/3.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/3.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/4.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400 font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/5.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/6.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/7.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700 text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                      
+                        <article class="col-span-1 shadow rounded-md bg-white overflow-hidden ">
+                            <div>
+                                <div class="p-0" >
+                                    <!-- img -->
+                                    <div class="h-[200px] group block overflow-hidden w-full bg-center bg-contain bg-no-repeat relative" style="background-image: url('./assets/images/products/1.jpg');">
+                                        <ul class=" rounded-t-md group-hover:bg-black  group-hover:bg-opacity-20 group-hover:z-10 w-full h-full scale-0 group-hover:scale-110 transition-all duration-500 flex items-center justify-center" >
+                                            <li class=" px-3 py-2 cursor-pointer z-20 bg-white rounded-md" > <i class="fa fa-eye"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div>
+                                        <p class="">
+                                            <a href="#" class="text-slate-700  text-xs lg:text-sm font-bold font-primary">Python Graft Developer T-Shirt</a>
+                                        </p>
+                                        <p class="">
+                                            <a href="#" class="uppercase text-slate-400  font-medium text-xs hidden md:block">T-shart</a>
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <p>
+                                                <span class="text-base font-bold lg:text-lg inline-block text-primary-color">$120</span>
+                                                <del class="text-gray-500 text-sm lg:text-base font-semibold">$150</del>
+                                            </p>
+                                            <form action="">
+                                                <button class="hover:bg-primary-color transition-all duration-300 bg-mute-color border-primary-color border text-primary-color hover:text-white px-2 py-[3px]  rounded-md"><i class="fas fa-plus text-sm"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </article>
+                      
+                    
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-gray-900 pt-10 mb-12 lg:mb-0 ">
+        <div class="pb-8">
+            <div class="container px-3 lg:px-0">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 md:gap-4 ">
+                    <div class="col-span-1 mb-5 lg:mb-0 flex items-center self-center">
+                        <div class="">
+                            <form action="">
+                                <div class="flex">
+                                    <input type="email" class="w-full py-2 pl-2 focus-visible:outline-none" placeholder="Email">
+                                    <button class="bg-primary-color px-2 text-white text-sm" >Subscribe</button>
+                                </div>
+                            </form>
+                            <p class="text-gray-500 leading-6 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quod?</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1 mb-5 lg:mb-0">
+                        <div class="">
+                            <p class="text-2xl text-gray-300 mb-4">Useful link</p>
+                            <ul class="space-y-2">
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check"></i> <a href="about.html" class="hover:pl-2 transition-all duration-300" >About us</a></li>
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check"></i> <a href="contact.html" class="hover:pl-2 transition-all duration-300" >Contact us</a></li>
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check"></i> <a href="javascript:void(0)" class="hover:pl-2 transition-all duration-300" >Tarms & condiations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-span-1 mb-5 lg:mb-0">
+                        <div class="">
+                            <p class="text-2xl text-gray-300 mb-4">My Account</p>
+                            <ul class="space-y-2">
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check"></i> <a href="login.html" class="hover:pl-2 transition-all duration-300" >Login</a></li>
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check"></i> <a href="register.html" class="hover:pl-2 transition-all duration-300" >Register</a></li>
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check"></i> <a href="javascript:void(0)" class="hover:pl-2 transition-all duration-300" >Order Track</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-span-1 mb-5 lg:mb-0">
+                        <div class="">
+                            <p class="text-2xl text-gray-300 mb-4">Contact</p>
+                            <ul class="space-y-2">
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> <a href="javascript:void(0)" class="hover:pl-2 transition-all duration-300" >Now yourk, asssito, 2154</a></li>
+                                <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-phone"></i> <a href="javascript:void(0)" class="hover:pl-2 transition-all duration-300" >(-558)-1245476454</a></li>
+                                <li class="text-gray-400 flex items-center gap-2"><i class="far fa-envelope"></i> <a href="javascript:void(0)" class="hover:pl-2 transition-all duration-300" >support.admin@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-800 hidden lg:block py-3">
+            <div class="container px-3 lg:px-0">
+                <div class="flex items-center flex-wrap justify-between">
+                    <ul class="flex items-center gap-3 ">
+                        <li><p class="text-slate-500"> Copyright &copy; 2023 xdora.com </p></li>
+                    </ul>
+                    <ul class="flex items-center gap-4 ">
+                        <li class="text-gray-200"><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
+                        <li class="text-gray-200"><a href="#"> <i class="fab fa-youtube"></i> </a></li>
+                        <li class="text-gray-200"><a href="#"> <i class="fab fa-instagram"></i> </a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+     <!--left menubar start -->
+     <div class="leftMenuWrap w-[250px] shadow-[0px_0px_5px_#ddd]  h-[100vh] bg-white z-50 transition-all duration-500 -left-[300px] bottom-0 top-0 fixed">
+        <div>
+            <ul class="flex items-center justify-between h-16 px-4">
+                <li class="w-28">
+                    <a href="#">
+                        <img src="./assets/images/logo/logo.png" alt="">
+                    </a>
+                </li>
+                <li><button class="closeLeftMenu"> <i class="fas fa-times-circle"></i></button></li>
+            </ul>
+            <ul class="">
+                <li>
+                    <a href="#" class="w-full inline-block py-2 text-base font-medium px-3  hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                    </a>
+
+                </li>
+                <li class="relative group">
+                    <a href="#" class="w-full flex justify-between items-center py-2 text-base font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                        <button class="subMenuFinder px-3 py-1 bg-slate-50">
+                            <i class="fas fa-angle-down text-slate-600"></i>
+                        </button>
+                    </a>
+                    <ul class="subMenuWrap w-[250px] hidden bg-white ">
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li class="relative group">
+                    <a href="#" class="w-full flex justify-between items-center py-2 text-base font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                        <button class="subMenuFinder px-3 py-1 bg-slate-50">
+                            <i class="fas fa-angle-down text-slate-600"></i>
+                        </button>
+                    </a>
+                    <ul class="subMenuWrap w-[250px] hidden bg-white ">
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li class="relative group">
+                    <a href="#" class="w-full flex justify-between items-center py-2 text-base font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                        <button class="subMenuFinder px-3 py-1 bg-slate-50">
+                            <i class="fas fa-angle-down text-slate-600"></i>
+                        </button>
+                    </a>
+                    <ul class="subMenuWrap w-[250px] hidden bg-white ">
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm lg:text-base w-full inline-block py-2  font-medium px-3 hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">Category1</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="#" class="w-full inline-block py-2 text-base font-medium px-3  hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#" class="w-full inline-block py-2 text-base font-medium px-3  hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="w-full inline-block py-2 text-base font-medium px-3  hover:bg-slate-50 hover:text-slate-900 text-slate-700 ">
+                        <span class="text-sm lg:text-base flex items-center justify-start gap-2">
+                            <img src="./assets/images//categorys/1.jpg" class="hidden lg:block w-5 h-5 object-cover" alt="">
+                            Category Dropdown
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--left menubar end -->
+
+    <!-- App Mobile Menu Start -->
+    <div class=" fixed bottom-0 border-t border-slate-100 bg-white left-0 w-full lg:hidden">
+        <ul class="flex items-center justify-around gap-2">
+            <li class="py-[6px]">
+                <a href="index.html" class="flex flex-col items-center">
+                    <div><i class="fas fa-home text-slate-600"></i></div>
+                    <div class="text-xs font-semibold text-slate-500">Home</div>
+                </a>
+            </li>
+            
+            <li class="py-[6px]">
+                <a href="#" class="flex flex-col items-center">
+                    <div><i class="fas fa-search text-slate-600"></i></div>
+                    <div class="text-xs font-semibold text-slate-500">Search</div>
+                </a>
+            </li>
+         
+           
+            <li class="py-[6px]">
+                <a href="cart.html" class="flex flex-col items-center relative">
+                    <span class="w-[14px] h-[14px] absolute  -top-1 -right-2 rounded-full bg-primary-color flex items-center justify-center text-[10px] text-white font-medium">8</span>
+                    <div><i class="fas fa-shopping-cart text-slate-600"></i></div>
+                    <div class="text-xs font-semibold text-slate-500">Cart</div>
+                </a>
+            </li>
+            <li class="py-[6px]">
+                <a  href="javascript:void(0)" class="categoryFinder flex flex-col  items-center">
+                    <div><i class="fas fa-th-list text-slate-600"></i></div>
+                    <div class="text-xs font-semibold text-slate-500">Categories</div>
+                </a>
+            </li>
+            <li class="py-[6px]">
+                <a href="login.html" class="flex flex-col items-center">
+                    <div><i class="fa fa-user text-slate-600"></i></div>
+                    <div class="text-xs font-semibold text-slate-500">Account</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- App Mobile Menu End   -->
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+</html>
