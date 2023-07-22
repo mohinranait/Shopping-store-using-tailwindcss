@@ -766,6 +766,11 @@ body::selection{
   margin-bottom: 1rem;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .-mb-5{
   margin-bottom: -1.25rem;
 }
@@ -1729,6 +1734,11 @@ body::selection{
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .pb-12{
