@@ -19,7 +19,7 @@ $(document).ready(() => {
         if( window.innerWidth > 992 ){
             // Product details page jquery code start
             $(".productTab").toggleClass("lg:col-span-9")
-            $(".productAside").removeClass("hidden")
+            $(".productAside").toggleClass("lg:block")
             $(".productGallary").addClass("grid-cols-12")
             $(".productOffer").addClass("lg:col-span-3")
             // Product details page jquery code end
