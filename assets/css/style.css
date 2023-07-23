@@ -2756,3 +2756,9 @@ body::selection{
     padding-right: 0px;
   }
 }
+
+@media (min-width: 1536px){
+  .\32xl\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
