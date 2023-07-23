@@ -2644,6 +2644,10 @@ body::selection{
     margin-top: 1.25rem;
   }
 
+  .lg\:mb-1{
+    margin-bottom: 0.25rem;
+  }
+
   .lg\:block{
     display: block;
   }
